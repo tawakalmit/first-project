@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pattern{
+    background-image: url('/public/Mask\ Group\ 20.png');
+}
