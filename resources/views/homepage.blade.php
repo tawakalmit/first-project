@@ -10,9 +10,9 @@
 </head>
 <body>
 
-<nav class="relative top-0 pt-[52px] w-full h-[53px] items-center">
+<nav class="absolute -top-10 md:relative md:top-0 pt-[52px] w-full h-[53px] items-center">
   <div class="w-11/12 h-fit flex mx-auto items-center justify-between">
-    <img src="/Group2.png" alt="logo" class="md:w-80">
+    <img src="/Group2.png" alt="logo" class="mt-2 w-60 md:mt-0 md:w-80">
     <div class="hidden md:flex justify-between w-7/12">
       <div class="flex">
         <input type="text" class="w-80 border-b-2">
@@ -29,13 +29,13 @@
   </div>
 </nav>
 
-<img src="/Group3914.png" alt="jumbotron" class="md:-mt-20">
+<img src="/Group3914.png" alt="jumbotron" class="mt-3 md:-mt-20">
 
 <div class="drawer drawer-end absolute top-0">
   <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
   <div class="drawer-content">
     <!-- Page content here -->
-    <label for="my-drawer-4" class="drawer-button cursor-pointer absolute right-[4rem] top-[3.5rem]"><img src="/Group3.svg" alt="burger-icon"></label>
+    <label for="my-drawer-4" class="drawer-button cursor-pointer right-[2rem] absolute md:right-[4rem] top-[1.25rem] md:top-[3.5rem]"><img src="/Group3.svg" alt="burger-icon" class="w-7 md:w-10"></label>
   </div> 
   <div class="drawer-side">
     <label for="my-drawer-4" class="drawer-overlay"></label>
@@ -67,45 +67,44 @@
         <a href="" class="text-white text-right text-xl mb-3">Career</a>
         <a href="" class="text-white text-right text-xl mb-3">Contact Us</a>
       </div>
-
-
 </div>
   </div>
 </div>
 
-<section class="w-full -mt-72">
+<section class="w-full md:-mt-72">
   <div class="w-8/12 flex items-center z-20 mx-auto justify-between">
-    <div class="w-7/12 pt-72">
-      <h1 class="text-[40px] font-bold">Choosing Hino Finance</h1>
-      <p class="text-[20px]">In every business, there has to be a Hino in between. That’s why we provide you with a comprehensive financing options available for our vehicles. When you need to get moving, we are always there to push you forward.</p>
+    <div class="w-7/12 md:pt-72">
+      <h1 class="text-[20px] md:text-[40px] font-bold">Choosing Hino Finance</h1>
+      <p class="text-sm md:text-[20px]">In every business, there has to be a Hino in between. That’s why we provide you with a comprehensive financing options available for our vehicles. When you need to get moving, we are always there to push you forward.</p>
     </div>
-    <img src="/Group3835.svg" alt="figure" class="w-20 md:w-96">
+    <img src="/Group3835.svg" alt="figure" class="w-32 md:w-96">
   </div>
 </section>
 
 <section class="w-full h-auto z-30 -mt-36">
   <img src="/Subtraction1.png" alt="subtrack" class="hidden md:block">
 
-  <div class="w-10/12 flex flex-col md:flex-row md:flex mx-auto justify-around -mt-[30rem]">
-  <div class="w-64 flex flex-col items-center p-5 border-4 rounded-xl border-[#DA1222]">
+  <div class="w-full md:w-10/12 flex flex-col md:flex-row md:flex mx-auto justify-around mt-40 items-center md:-mt-[30rem]">
+
+  <div class="w-64 h-[22rem] mb-5 flex flex-col items-center p-5 border-4 rounded-xl border-[#DA1222]">
     <img src="/Group14.svg" alt="speaker" class="w-24 mb-10">
     <h2 class="text-2xl text-[#DA1222] font-bold mb-3">Bespoke Offering</h2>
     <p class="text-center text-[#DA1222]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error placeat esse nobis provident aut repellat minima </p>
   </div>
 
-  <div class="w-64 flex flex-col items-center p-5 border-4 rounded-xl border-[#DA1222]">
+  <div class="w-64 h-[22rem] mb-5 flex flex-col items-center p-5 border-4 rounded-xl border-[#DA1222]">
     <img src="/Group16.svg" alt="speaker" class="w-24 mb-10">
     <h2 class="text-2xl text-[#DA1222] font-bold mb-3">Trusted & Reliable</h2>
     <p class="text-center text-[#DA1222]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error placeat esse nobis provident aut repellat minima </p>
   </div>
 
-  <div class="w-64 flex flex-col items-center p-5 px-4 border-4 rounded-xl border-[#DA1222]">
+  <div class="w-64 h-[22rem] mb-5 flex flex-col items-center p-5 px-4 border-4 rounded-xl border-[#DA1222]">
     <img src="/Group15.svg" alt="speaker" class="w-28 mb-11">
     <h2 class="text-2xl text-[#DA1222] text-center font-bold mb-3">Customer Oriented</h2>
     <p class="text-center text-[#DA1222]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error placeat esse nobis provident aut repellat minima </p>
   </div>
 
-  <div class="w-64 flex flex-col items-center p-5 border-4 rounded-xl border-[#DA1222]">
+  <div class="w-64 h-[22rem] mb-5 flex flex-col items-center p-5 border-4 rounded-xl border-[#DA1222]">
     <img src="/Group14.svg" alt="speaker" class="w-24 mb-10">
     <h2 class="text-2xl text-[#DA1222] font-bold mb-3">Competitive</h2>
     <p class="text-center text-[#DA1222]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error placeat esse nobis provident aut repellat minima </p>
@@ -114,7 +113,8 @@
 </section>
 
 <section class="flex flex-col w-8/12 mx-auto mt-60 md:flex-row justify-around">
-  <div>
+
+  <div class="mb-20 md:mb-0">
     <img src="/shutterstock_2140004723.png" alt="alt" class="rounded-t-xl w-72">
     <img src="/Group 3917.png" alt="alt" class="w-72">
     <img src="/Group 3832.svg" alt="alt" class="mx-auto -mt-[17rem] w-24">
@@ -123,7 +123,7 @@
     <p class="text-center text-md opacity-50 -mt-1">People Job Industry</p>
   </div>
 
-  <div>
+  <div class="mb-20 md:mb-0">
     <img src="/shutterstock_1896360157.png" alt="alt" class="rounded-t-xl w-72">
     <img src="/Group 3916.png" alt="alt" class="w-72">
     <img src="/Group 3832.svg" alt="alt" class="mx-auto -mt-[16.5rem] w-24">
@@ -132,7 +132,7 @@
     <p class="text-center text-md opacity-50 -mt-1">People Job Industry</p>
   </div>
 
-  <div>
+  <div class="mb-20 md:mb-0">
     <img src="/shutterstock_2107476044 (1).png" alt="alt" class="rounded-t-xl w-72">
     <img src="/Group 3915.png" alt="alt" class="w-72 -mt-1">
     <img src="/Group 3832.svg" alt="alt" class="mx-auto -mt-[16rem] w-24">
