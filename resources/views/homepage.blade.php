@@ -12,8 +12,8 @@
 
 <nav class="relative top-0 pt-[52px] w-full h-[53px] items-center">
   <div class="w-11/12 h-fit flex mx-auto items-center justify-between">
-    <img src="/Group2.png" alt="logo" class="w-80">
-    <div class="flex justify-between w-7/12">
+    <img src="/Group2.png" alt="logo" class="md:w-80">
+    <div class="hidden md:flex justify-between w-7/12">
       <div class="flex">
         <input type="text" class="w-80 border-b-2">
         <img src="/Group1.svg" alt="search-icon" class="w-5">
@@ -29,7 +29,7 @@
   </div>
 </nav>
 
-<img src="/Group3914.png" alt="jumbotron" class="-mt-20">
+<img src="/Group3914.png" alt="jumbotron" class="md:-mt-20">
 
 <div class="drawer drawer-end absolute top-0">
   <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
@@ -39,7 +39,7 @@
   </div> 
   <div class="drawer-side">
     <label for="my-drawer-4" class="drawer-overlay"></label>
-    <div class="w-4/12 menu p-4 overflow-y-auto w-80 bg-gradient-to-b from-[#E30A17] to-[#A5030E] text-base-content">
+    <div class="w-full md:w-4/12 h-full menu p-4 overflow-y-auto bg-gradient-to-b from-[#E30A17] to-[#A5030E] text-base-content">
       <!-- Sidebar content here -->
 
       <div class="cursor-pointer w-11/12 flex justify-end mt-5">
@@ -79,14 +79,14 @@
       <h1 class="text-[40px] font-bold">Choosing Hino Finance</h1>
       <p class="text-[20px]">In every business, there has to be a Hino in between. That’s why we provide you with a comprehensive financing options available for our vehicles. When you need to get moving, we are always there to push you forward.</p>
     </div>
-    <img src="/Group3835.svg" alt="figure" class="w-96">
+    <img src="/Group3835.svg" alt="figure" class="w-20 md:w-96">
   </div>
 </section>
 
 <section class="w-full h-auto z-30 -mt-36">
-  <img src="/Subtraction1.png" alt="subtrack">
+  <img src="/Subtraction1.png" alt="subtrack" class="hidden md:block">
 
-  <div class="w-10/12 flex mx-auto justify-around -mt-[30rem]">
+  <div class="w-10/12 flex flex-col md:flex-row md:flex mx-auto justify-around -mt-[30rem]">
   <div class="w-64 flex flex-col items-center p-5 border-4 rounded-xl border-[#DA1222]">
     <img src="/Group14.svg" alt="speaker" class="w-24 mb-10">
     <h2 class="text-2xl text-[#DA1222] font-bold mb-3">Bespoke Offering</h2>
@@ -113,7 +113,7 @@
   </div>
 </section>
 
-<section class="w-8/12 mx-auto mt-60 flex justify-around">
+<section class="flex flex-col w-8/12 mx-auto mt-60 md:flex-row justify-around">
   <div>
     <img src="/shutterstock_2140004723.png" alt="alt" class="rounded-t-xl w-72">
     <img src="/Group 3917.png" alt="alt" class="w-72">
@@ -155,43 +155,23 @@
       <img src="/Mask Group 2.png" alt="alt" class="w-[100rem]">
     </div>
   </div>
-  <div class="w-[30rem] h-[22rem] absolute top-[188rem] left-[8rem] rounded-2xl bg-black bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 shadow-2xl">
+
+  <div class="w-full md:w-[30rem] h-[22rem] md:absolute top-[188rem] left-[8rem] rounded-2xl bg-black bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 shadow-2xl">
     <h2 class="text-white font-bold text-3xl px-16 pt-14 pb-3">Promotion Title One</h2>
     <p class="text-white align-center text-xl px-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     <div class="w-48 mt-10 h-10 bg-[#DD0A16] flex items-center justify-center text-white rounded-full mx-auto">
       <p class="font-bold text-2xl ">More Details</p>
     </div>
   </div>
+
 </section>
 
 <section class="mt-14">
   <h1 class="text-center text-4xl font-bold text-[#DD0A16] mb-14">Preferred Products</h1>
-  <div class="flex mx-auto w-8/12 justify-around">
-    <div>
-      <div class="w-96 h-[30rem] rounded-3xl bg-gradient-to-b from-[#E30A17] to-[#A5030E]">
-        <h2 class="text-center font-bold text-white text-3xl pt-10">Tailor-Made</h2>
-        <div>
-          <p class="text-sm w-44 text-white ml-10 mt-5">Our famous custom-made plan to fit to your cashflow and business</p>
-          <div class="w-4/12 ml-10 mt-3 h-0.5 bg-white"></div>
-        </div>
-        <div>
-          <p class="text-sm w-[7rem] text-white ml-10 mt-5">Flexible Payment Scheme</p>
-          <div class="w-3/12 ml-10 mt-3 h-0.5 bg-white"></div>
-        </div>
-        <div>
-          <p class="text-sm w-[10rem] text-white ml-10 mt-5">Interest Rate Options</p>
-          <div class="w-2/12 ml-10 mt-3 h-0.5 bg-white"></div>
-        </div>
-        <div>
-          <p class="text-sm w-[8rem] text-white ml-10 mt-5">Finance Lease or Lease Back</p>
-          <div class="w-1/12 ml-10 mt-3 h-0.5 bg-white"></div>
-        </div>
-      </div>
-      <img src="/Mask Group 27.png" alt="alt" class="w-[15rem] ml-[10rem] -mt-[23rem]">
-    </div>
+  <div class="flex flex-col md:flex-row mx-auto md:w-8/12 justify-around">
 
     <div>
-      <div class="w-96 h-[30rem] rounded-3xl bg-gradient-to-b from-[#E30A17] to-[#A5030E]">
+      <div class="w-96 mx-auto h-[30rem] rounded-3xl bg-gradient-to-b from-[#E30A17] to-[#A5030E]">
         <h2 class="text-center font-bold text-white text-3xl pt-10">Combo Package</h2>
         <div>
           <p class="text-sm w-44 text-white ml-10 mt-5">All-in-one No-worry Package</p>
@@ -210,7 +190,30 @@
           <div class="w-1/12 ml-10 mt-3 h-0.5 bg-white"></div>
         </div>
       </div>
-      <img src="/Mask Group 9.png" alt="alt" class="w-[16rem] ml-[10rem] -mt-[24.5rem]">
+      <img src="/Mask Group 9.png" alt="alt" class="w-20 md:w-[16rem] ml-[10rem] -mt-[24.5rem]">
+    </div>
+
+    <div>
+      <div class="w-96 mx-auto h-[30rem] rounded-3xl bg-gradient-to-b from-[#E30A17] to-[#A5030E]">
+        <h2 class="text-center font-bold text-white text-3xl pt-10">Combo Package</h2>
+        <div>
+          <p class="text-sm w-44 text-white ml-10 mt-5">All-in-one No-worry Package</p>
+          <div class="w-4/12 ml-10 mt-3 h-0.5 bg-white"></div>
+        </div>
+        <div>
+          <p class="text-sm w-[7rem] text-white ml-10 mt-5">Various Truck Selections</p>
+          <div class="w-3/12 ml-10 mt-3 h-0.5 bg-white"></div>
+        </div>
+        <div>
+          <p class="text-sm w-[10rem] text-white ml-10 mt-5">Full Chassis & Carrosseries</p>
+          <div class="w-2/12 ml-10 mt-3 h-0.5 bg-white"></div>
+        </div>
+        <div>
+          <p class="text-sm w-[8rem] text-white ml-10 mt-5">Insurance & Maintenance Included</p>
+          <div class="w-1/12 ml-10 mt-3 h-0.5 bg-white"></div>
+        </div>
+      </div>
+      <img src="/Mask Group 9.png" alt="alt" class="w-20 md:w-[16rem] ml-[10rem] -mt-[24.5rem]">
     </div>
 </div>
 </section>
@@ -219,7 +222,7 @@
   <div>
   <h1 class="font-bold text-3xl py-8">Latest From Hino Finance</h1>
   </div>
-  <div class="w-full flex mx-auto justify-between">
+  <div class="w-full flex flex-col md:flex-row mx-auto justify-between">
 
     <div class="w-64 h-fit rounded-3xl shadow-2xl">
       <img src="/Rectangle 2932.png" alt="alt">
@@ -260,8 +263,8 @@
   </div>
 </section>
 
-<footer class="w-full h-[80vh] bg-[#111111] text-white">
-  <div class="pt-14 w-10/12 mx-auto flex justify-between">
+<footer class="w-full h-fit md:h-[80vh] bg-[#111111] text-white">
+  <div class="pt-14 w-10/12 mx-auto flex flex-col md:flex-row justify-between">
 
     <div class="w-[22rem]">
       <img src="/Group 3822.png" alt="alt" class="w-[22rem]">
