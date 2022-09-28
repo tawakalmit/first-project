@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('homepage');
+Route::view('/', 'homepage')->name('homepage');
+Route::view('/crud', 'crud')->name('crud');
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
+
+Route::controller(Headline::class)->group(function () {
+    Route::get('/headline.index', 'index');
 });

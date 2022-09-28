@@ -7,6 +7,7 @@
   @vite('resources/css/app.css')
     <title>Homepage</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localize/0.1.0/jquery.localize.min.js"></script>
 </head>
 <body>
 
@@ -15,11 +16,11 @@
     <img src="/Group2.png" alt="logo" class="mt-2 w-60 md:mt-0 md:w-80">
     <div class="hidden md:flex justify-between w-7/12">
       <div class="flex">
-        <input type="text" class="w-80 border-b-2">
+        <input type="text" class="w-80 border-b-2 border-[rgba(20,20,20,0)]">
         <img src="/Group1.svg" alt="search-icon" class="w-5">
       </div>
-      <div class="bg-[#DD0A16] rounded-full">
-        <p class="text-center text-white px-5 py-1">Register/Login</p>
+      <div class="bg-[#DD0A16] rounded-full flex items-center">
+        <a href="{{ route('register') }}" class="text-center text-white px-5 py-1">Register/login</a>
       </div>
       <div>
         <p class="font-bold">ID | EN</p>
@@ -48,10 +49,14 @@
       </div>
 
       <div class="w-10/12 mt-5 justify-end flex items-center">
-        <div class="w-fit bg-white rounded-full mr-10">
-          <p class="py-2 px-4 text-[#DD0A16] font-bold">Register/Login</p>
+        <div class="w-fit h-10 bg-white rounded-full mr-10 flex items-center">
+          <a href="{{ route('register') }}" class="py-2 px-4 text-[#DD0A16] font-bold">Register/Login</a>
         </div>
-        <p class="text-white font-bold">ID | EN</p>
+        <label class="swap">
+          <input type="checkbox" class="opacity-0" />
+          <div class="swap-on text-white">ID</div>
+          <div class="swap-off text-white">EN</div>
+        </label>
       </div>
 
       <div class="flex justify-end w-10/12 mt-5">
@@ -60,21 +65,21 @@
       </div>
 
       <div class="w-10/12 mt-5 flex flex-col">
-        <a href="" class="text-white text-right text-xl mb-3">Product</a>
-        <a href="" class="text-white text-right text-xl mb-3">Promo</a>
-        <a href="" class="text-white text-right text-xl mb-3">Services</a>
+        <a href="" data-localize="Produk" class="text-white text-right text-xl mb-3">Product</a>
+        <a href="" data-localize="Promo" class="text-white text-right text-xl mb-3">Promo</a>
+        <a href="" data-localize="Layanan" class="text-white text-right text-xl mb-3">Services</a>
         <a href="" class="text-white text-right text-xl mb-3">FAQ</a>
-        <a href="" class="text-white text-right text-xl mb-3">Career</a>
-        <a href="" class="text-white text-right text-xl mb-3">Contact Us</a>
+        <a href="" data-localize="Karir" class="text-white text-right text-xl mb-3">Career</a>
+        <a href="" data-localize="Hubungi Kami" class="text-white text-right text-xl mb-3">Contact Us</a>
       </div>
 </div>
   </div>
 </div>
 
-<section class="w-full md:-mt-72">
+<section class="w-full mt-10 pb-10 md:-mt-72 md:pb-0">
   <div class="w-8/12 flex items-center z-20 mx-auto justify-between">
     <div class="w-7/12 md:pt-72">
-      <h1 class="text-[20px] md:text-[40px] font-bold">Choosing Hino Finance</h1>
+      <h1 class="text-[20px] md:text-[3em] font-bold">Choosing Hino Finance</h1>
       <p class="text-sm md:text-[20px]">In every business, there has to be a Hino in between. That’s why we provide you with a comprehensive financing options available for our vehicles. When you need to get moving, we are always there to push you forward.</p>
     </div>
     <img src="/Group3835.svg" alt="figure" class="w-32 md:w-96">
@@ -143,15 +148,15 @@
 </section>
 
 <section class="w-full h-[55rem] mt-28 pattern">
-  <div class="w-full flex justify-between">
-    <div class="w-5/12 pl-40 mt-28">
+  <div class="w-full flex flex-col md:flex-row justify-between">
+    <div class="md:w-5/12 pl-40 mt-10 pb-5 md:pb-0 md:mt-28">
       <h2 class="text-5xl font-bold w-32 mb-5">Latest Deals</h2>
       <div class="flex">
       <a href="" class="text-lg font-bold text-[#DD0A16]">View All Promo</a>
       <img src="/Group 3839.png" alt="alt" class="w-8 ml-2">
       </div>
     </div>
-    <div class="mt-28">
+    <div class="md:mt-28">
       <img src="/Mask Group 2.png" alt="alt" class="w-[100rem]">
     </div>
   </div>
@@ -170,7 +175,7 @@
   <h1 class="text-center text-4xl font-bold text-[#DD0A16] mb-14">Preferred Products</h1>
   <div class="flex flex-col md:flex-row mx-auto md:w-8/12 justify-around">
 
-    <div>
+    <div class="mb-20 md:mb-0">
       <div class="w-96 mx-auto h-[30rem] rounded-3xl bg-gradient-to-b from-[#E30A17] to-[#A5030E]">
         <h2 class="text-center font-bold text-white text-3xl pt-10">Combo Package</h2>
         <div>
@@ -190,7 +195,7 @@
           <div class="w-1/12 ml-10 mt-3 h-0.5 bg-white"></div>
         </div>
       </div>
-      <img src="/Mask Group 9.png" alt="alt" class="w-20 md:w-[16rem] ml-[10rem] -mt-[24.5rem]">
+      <img src="/Mask Group 27.png" alt="alt" class="w-[15rem] md:w-[16rem] ml-[10rem] -mt-[23rem] md:-mt-[24.5rem]">
     </div>
 
     <div>
@@ -213,7 +218,7 @@
           <div class="w-1/12 ml-10 mt-3 h-0.5 bg-white"></div>
         </div>
       </div>
-      <img src="/Mask Group 9.png" alt="alt" class="w-20 md:w-[16rem] ml-[10rem] -mt-[24.5rem]">
+      <img src="/Mask Group 9.png" alt="alt" class="w-[15rem] md:w-[16rem] ml-[10rem] md:ml-[12rem] -mt-[23rem] md:-mt-[24.5rem]">
     </div>
 </div>
 </section>
@@ -222,9 +227,9 @@
   <div>
   <h1 class="font-bold text-3xl py-8">Latest From Hino Finance</h1>
   </div>
-  <div class="w-full flex flex-col md:flex-row mx-auto justify-between">
+  <div class="w-full flex flex-col items-center md:flex-row mx-auto justify-between">
 
-    <div class="w-64 h-fit rounded-3xl shadow-2xl">
+    <div class="w-64 mb-5 h-fit rounded-3xl shadow-2xl">
       <img src="/Rectangle 2932.png" alt="alt">
       <div class="p-5">
       <h2 class="font-bold text-[#DD0A16] text-2xl">News Title</h2>
@@ -233,7 +238,7 @@
       </div>
     </div>
 
-    <div class="w-64 h-fit rounded-3xl shadow-2xl">
+    <div class="w-64 mb-5 h-fit rounded-3xl shadow-2xl">
       <img src="/Rectangle 2933.png" alt="alt">
       <div class="p-5">
       <h2 class="font-bold text-[#DD0A16] text-2xl">News Title</h2>
@@ -242,7 +247,7 @@
       </div>
     </div>
 
-    <div class="w-64 h-fit rounded-3xl shadow-2xl">
+    <div class="w-64 mb-5 h-fit rounded-3xl shadow-2xl">
       <img src="/Rectangle 2934.png" alt="alt">
       <div class="p-5">
       <h2 class="font-bold text-[#DD0A16] text-2xl">News Title</h2>
@@ -251,7 +256,7 @@
       </div>
     </div>
 
-    <div class="w-64 h-fit rounded-3xl shadow-2xl">
+    <div class="w-64 mb-5 h-fit rounded-3xl shadow-2xl">
       <img src="/Rectangle 2935.png" alt="alt">
       <div class="p-5">
       <h2 class="font-bold text-[#DD0A16] text-2xl">News Title</h2>
@@ -318,20 +323,18 @@
   <div class="w-10/12 h-0.5 bg-white mx-auto mt-20 opacity-50"></div>
   <p class="w-10/12 mx-auto mt-5 text-lg">Product | Promotions | Article | Services | FAQ | Career | Privacy Policy</p>
 
-  <div class="mt-[3rem] flex w-10/12 mx-auto text-sm items-center justify-between">
-    <div class="flex w-6/12 justify-between items-center">
+  <div class="mt-[3rem] flex flex-col md:flex-row w-10/12 mx-auto text-sm items-center justify-between">
+    <div class="flex md:w-6/12 justify-between items-center">
     <p>PT Hino Finance Indonesia Berizin & Diawasi oleh Otoritas Jasa Keuangan</p>
     <img src="/Group 3911.png" alt="alt">
     </div>
-    <div class="flex w-4/12 justify-between items-center">
+    <div class="flex w-full mb-5 md:mb-0 md:w-4/12 justify-between items-center">
       <p>Cookie Policy</p>
       <p>Privacy Statement</p>
       <p>Term of Use</p>
     </div>
   </div>
 </footer>
-
-
 
 </body>
 </html>
