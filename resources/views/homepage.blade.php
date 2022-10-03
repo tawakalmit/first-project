@@ -91,60 +91,21 @@
 
   <div class="w-full md:w-10/12 flex flex-col md:flex-row md:flex mx-auto justify-around mt-40 items-center md:-mt-[30rem]">
 
-  <div class="w-64 h-[22rem] mb-5 flex flex-col items-center p-5 border-4 rounded-xl border-[#DA1222]">
-    <img src="/Group14.svg" alt="speaker" class="w-24 mb-10">
-    <h2 class="text-2xl text-[#DA1222] font-bold mb-3">Bespoke Offering</h2>
-    <p class="text-center text-[#DA1222]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error placeat esse nobis provident aut repellat minima </p>
-  </div>
+  
+  <x-hinocard></x-hinocard>
 
-  <div class="w-64 h-[22rem] mb-5 flex flex-col items-center p-5 border-4 rounded-xl border-[#DA1222]">
-    <img src="/Group16.svg" alt="speaker" class="w-24 mb-10">
-    <h2 class="text-2xl text-[#DA1222] font-bold mb-3">Trusted & Reliable</h2>
-    <p class="text-center text-[#DA1222]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error placeat esse nobis provident aut repellat minima </p>
-  </div>
-
-  <div class="w-64 h-[22rem] mb-5 flex flex-col items-center p-5 px-4 border-4 rounded-xl border-[#DA1222]">
-    <img src="/Group15.svg" alt="speaker" class="w-28 mb-11">
-    <h2 class="text-2xl text-[#DA1222] text-center font-bold mb-3">Customer Oriented</h2>
-    <p class="text-center text-[#DA1222]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error placeat esse nobis provident aut repellat minima </p>
-  </div>
-
-  <div class="w-64 h-[22rem] mb-5 flex flex-col items-center p-5 border-4 rounded-xl border-[#DA1222]">
-    <img src="/Group14.svg" alt="speaker" class="w-24 mb-10">
-    <h2 class="text-2xl text-[#DA1222] font-bold mb-3">Competitive</h2>
-    <p class="text-center text-[#DA1222]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error placeat esse nobis provident aut repellat minima </p>
-  </div>
+  
   </div>
 </section>
 
 <section class="flex flex-col w-8/12 mx-auto mt-60 md:flex-row justify-around">
 
-  <div class="mb-20 md:mb-0">
-    <img src="/shutterstock_2140004723.png" alt="alt" class="rounded-t-xl w-72">
-    <img src="/Group 3917.png" alt="alt" class="w-72">
-    <img src="/Group 3832.svg" alt="alt" class="mx-auto -mt-[17rem] w-24">
-    <p class="mt-5 w-64 text-sm text-center mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p class="text-center text-lg font-bold mt-5">People Name</p>
-    <p class="text-center text-md opacity-50 -mt-1">People Job Industry</p>
-  </div>
+  <x-mycard></x-mycard>
 
-  <div class="mb-20 md:mb-0">
-    <img src="/shutterstock_1896360157.png" alt="alt" class="rounded-t-xl w-72">
-    <img src="/Group 3916.png" alt="alt" class="w-72">
-    <img src="/Group 3832.svg" alt="alt" class="mx-auto -mt-[16.5rem] w-24">
-    <p class="mt-5 w-64 text-sm text-center mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p class="text-center text-lg font-bold mt-5">People Name</p>
-    <p class="text-center text-md opacity-50 -mt-1">People Job Industry</p>
-  </div>
+  <x-mycard2></x-mycard2>
 
-  <div class="mb-20 md:mb-0">
-    <img src="/shutterstock_2107476044 (1).png" alt="alt" class="rounded-t-xl w-72">
-    <img src="/Group 3915.png" alt="alt" class="w-72 -mt-1">
-    <img src="/Group 3832.svg" alt="alt" class="mx-auto -mt-[16rem] w-24">
-    <p class="mt-5 w-64 text-sm text-center mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p class="text-center text-lg font-bold mt-5">People Name</p>
-    <p class="text-center text-md opacity-50 -mt-1">People Job Industry</p>
-  </div>
+  <x-mycard3></x-mycard3>
+
 </section>
 
 <section class="w-full h-[55rem] mt-28 pattern">

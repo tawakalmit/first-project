@@ -1,21 +1,19 @@
 <?php
 
 namespace App\View\Components;
-use Illuminate\Support\Facades\DB;
+
 use Illuminate\View\Component;
-use App\Models\Card;
-class Mycard extends Component
+
+class hinocard extends Component
 {
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public $mycard;
-    public function __construct($mycard = [])
+    public function __construct()
     {
-        $mycard = Card::all();
-        $this->mycard = $mycard;
+        //
     }
 
     /**
@@ -25,6 +23,9 @@ class Mycard extends Component
      */
     public function render()
     {
-        return view('components.mycard');
+        $hino = [
+            'Bespoke Offering', 'Trusted & Reliable', 'Customer', 'Competitive'
+        ];
+        return view('components.hinocard', compact('hino'));
     }
 }

@@ -1,6 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CrudControlller;
+use App\Http\Controllers\ProfileInformationController;
+use App\Http\Controllers\TaskController;
+use App\Http\Controllers\MycardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,8 +18,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'homepage')->name('homepage');
-Route::view('/crud', 'crud')->name('crud');
+Route::get('/', HomeController::class);
+
+Route::get('crud', [CrudControlller::class, 'create'])->name('crud.index');
+Route::post('crud', [CrudControlller::class, 'store'])->name('crud.store');
+
+Route::get('mycard', [MycardController::class, 'index']);
+
+Route::get('tasks', [TaskController::class, 'index']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

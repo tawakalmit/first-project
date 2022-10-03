@@ -1,21 +1,23 @@
 <?php
 
 namespace App\View\Components;
-use Illuminate\Support\Facades\DB;
+
 use Illuminate\View\Component;
-use App\Models\Card;
-class Mycard extends Component
+use Illuminate\Support\Facades\DB;
+use App\Models\Card3;
+
+class mycard3 extends Component
 {
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public $mycard;
-    public function __construct($mycard = [])
+    public $mycard3;
+    public function __construct($mycard3 = [])
     {
-        $mycard = Card::all();
-        $this->mycard = $mycard;
+        $mycard3 = Card3::all();
+        $this->mycard3 = $mycard3;
     }
 
     /**
@@ -25,6 +27,6 @@ class Mycard extends Component
      */
     public function render()
     {
-        return view('components.mycard');
+        return view('components.mycard3');
     }
 }

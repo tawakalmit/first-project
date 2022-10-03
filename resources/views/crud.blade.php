@@ -5,18 +5,21 @@
     </x-slot>
 
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('crud') }}
-        </h2>
+        CRUD Page
     </x-slot>
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200">
-                    Crud Page
-                </div>
-            </div>
+    <form action="crud" method="post" class="w-10/12 md:w-3/12 mx-auto bg-[#2c3e50] mt-10 flex items-center flex-col rounded-xl">
+        @csrf
+        <div class="w-10/12 mx-auto p-3">
+            <label for="headline" class="text-white">Headline</label>
+            <input type="text" placeholder="Type here" id="headline" name="headline" class="input w-full" />
         </div>
-    </div>
+        <div class="w-10/12 mx-auto p-3">
+            <label for="description" class="text-white">Description</label>
+            <input type="text" placeholder="Type here" id="description" name="description" class="input w-full" />
+        </div>
+        <button type="submit" class="btn glass m-5">Submit</button>
+
+    </form>
+    
 </x-app-layout>

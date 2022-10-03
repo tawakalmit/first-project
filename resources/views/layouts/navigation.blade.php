@@ -5,7 +5,7 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="{{ route('homepage') }}">
+                    <a href="{{ '/' }}">
                         Home
                     </a>
                 </div>
@@ -16,7 +16,7 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
 
-                    <x-nav-link :href="route('crud')" :active="request()->routeIs('crud')">
+                    <x-nav-link :href="route('crud.index')" :active="request()->routeIs('crud')">
                         {{ __('crud') }}
                     </x-nav-link>
                 </div>
