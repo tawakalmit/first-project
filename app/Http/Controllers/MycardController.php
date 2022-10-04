@@ -10,7 +10,7 @@ class MycardController extends Controller
     public function index(){
         $mycard = DB::table('card')->get();
         //dd($mycard);
-        return view('components.mycard', compact('mycard'));
+        return view('crud', compact('mycard'));
     }
 
     public function store(Request $request){

@@ -22,8 +22,11 @@ use App\Http\Controllers\Mycard3Controller;
 
 Route::get('/', HomeController::class);
 
-Route::get('crud', [CrudControlller::class, 'create'])->name('crud.index');
+Route::get('crud', [CrudControlller::class, 'index'])->name('crud.index');
 Route::post('crud', [CrudControlller::class, 'store'])->name('crud.store');
+Route::get('crud/{id}/edit', [CrudControlller::class, 'edit'])->name('crud.edit');
+Route::put('crud/{id}', [CrudControlller::class, 'update'])->name('crud.update');
+Route::delete('crud/{id}', [CrudControlller::class, 'destroy'])->name('crud.destroy');
 
 Route::get('mycard', [MycardController::class, 'index']);
 Route::post('crud', [MycardController::class, 'store']);

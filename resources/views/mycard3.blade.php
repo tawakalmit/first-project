@@ -55,7 +55,7 @@
                     <a href="/mycard2/{{ $card3->id }}/edit">Edit</a>
                     </div>
                     <div class="w-16 ml-5 h-7 flex justify-center rounded-full items-center bg-[#e74c3c] hover:bg-black hover:text-white">
-                    <form action="/mycard2/{{ $card3->id }}" method="post">
+                    <form action="/mycard3/{{ $card3->id }}" method="post">
                         @csrf
                         @method('delete')
                         <button type="submit">Delete</button>
