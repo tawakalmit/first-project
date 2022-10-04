@@ -11,4 +11,14 @@ class TaskController extends Controller
        $tasks =  DB::table('tasks')->get();
        return view('tasks.index', compact('tasks'));
     }
+
+    public function create(){
+        return view('tasks.create');
+    }
+
+    public function store(Request $request){
+        DB::table('tasks')->insert([
+            'list' => $request->list,
+        ]);
+    }
 }

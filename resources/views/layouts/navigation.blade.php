@@ -19,6 +19,14 @@
                     <x-nav-link :href="route('crud.index')" :active="request()->routeIs('crud')">
                         {{ __('crud') }}
                     </x-nav-link>
+
+                    <x-nav-link :href="route('mycard2.index')" :active="request()->routeIs('mycard2')">
+                        {{ __('mycard2') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('mycard3.index')" :active="request()->routeIs('mycard3')">
+                        {{ __('mycard3') }}
+                    </x-nav-link>
                 </div>
             </div>
 

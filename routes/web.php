@@ -6,6 +6,8 @@ use App\Http\Controllers\CrudControlller;
 use App\Http\Controllers\ProfileInformationController;
 use App\Http\Controllers\TaskController;
 use App\Http\Controllers\MycardController;
+use App\Http\Controllers\Mycard2Controller;
+use App\Http\Controllers\Mycard3Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,8 +26,23 @@ Route::get('crud', [CrudControlller::class, 'create'])->name('crud.index');
 Route::post('crud', [CrudControlller::class, 'store'])->name('crud.store');
 
 Route::get('mycard', [MycardController::class, 'index']);
+Route::post('crud', [MycardController::class, 'store']);
+
+Route::get('mycard2', [Mycard2Controller::class, 'index'])->name('mycard2.index');
+Route::post('mycard2', [Mycard2Controller::class, 'store'])->name('mycard2.store');
+Route::get('mycard2/{id}/edit', [Mycard2Controller::class, 'edit'])->name('mycard2.edit');
+Route::put('mycard2/{id}', [Mycard2Controller::class, 'update'])->name('mycard2.update');
+Route::delete('mycard2/{id}', [Mycard2Controller::class, 'destroy'])->name('mycard2.destroy');
+
+Route::get('mycard3', [Mycard3Controller::class, 'index'])->name('mycard3.index');
+Route::post('mycard3', [Mycard3Controller::class, 'store'])->name('mycard3.store');
+Route::get('mycard3/{id}/edit', [Mycard3Controller::class, 'edit'])->name('mycard3.edit');
+Route::put('mycard3/{id}', [Mycard3Controller::class, 'update'])->name('mycard3.update');
+Route::delete('mycard3/{id}', [Mycard3Controller::class, 'destroy'])->name('mycard3.destroy');
 
 Route::get('tasks', [TaskController::class, 'index']);
+Route::get('tasks/create', [TaskController::class, 'create']);
+Route::post('tasks', [TaskController::class, 'store']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
